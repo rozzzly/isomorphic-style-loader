@@ -1,6 +1,6 @@
 {
   "name": "react-wrap-with-context",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "description": "Pass context into React components and replace for React.withContext",
   "main": "bin/WithContext.js",
   "types": "WithContext.d.ts",
@@ -11,8 +11,7 @@
   },
   "files": [
     "WithContext.d.ts",
-    "src/ExampleComponent.js",
-    "src/WithContext.js"
+    "bin/WithContext.js"
   ],
   "keywords": [
     "unit-testing",
@@ -20,6 +19,13 @@
     "react-context",
     "jest",
     "karma"
+  ],
+  "contributors": [
+    {
+      "name": "rozzzly",
+      "url": "https://github.com/rozzzly",
+      "email": "pclienau@gmail.com"
+    }
   ],
   "dependencies": {
     "@types/react": "^15.0.11",
@@ -45,16 +51,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rozzzly/react-wrap-with-context.git"
+    "url": "git+https://github.com/mattzeunert/react-wrap-with-context.git"
   },
   "author": {
-    "email": "pclienau@gmail.com",
-    "name": "rozzzly",
-    "url": "git+https://github.com/rozzzly/react-wrap-with-context.git"
+    "name": "mattzeunert",
+    "url": "https://github.com/mattzeunert"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rozzzly/react-wrap-with-context/issues"
+    "url": "https://github.com/mattzeunert/react-with-context/issues"
   },
-  "homepage": "https://github.com/rozzzly/react-wrap-with-context#readme"
+  "homepage": "https://github.com/mattzeunert/react-with-context#readme"
 }
