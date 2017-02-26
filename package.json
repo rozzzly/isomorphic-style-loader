@@ -1,6 +1,6 @@
 {
   "name": "isopropyl-style-loader",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "A fork of isomorphic-style-loader, but with the critical path CSS functionality removed.",
   "main": "index.js",
   "types": [
@@ -8,7 +8,6 @@
     "dom.d.ts",
     "index.d.ts",
     "inline.d.ts",
-    "prepExports.d.ts",
     "registry.d.ts"
   ],
   "scripts": {
@@ -21,13 +20,11 @@
     "dom.d.ts",
     "index.d.ts",
     "inline.d.ts",
-    "prepExports.d.ts",
     "registry.d.ts",
     "constants.js",
     "dom.js",
     "index.js",
     "inline.js",
-    "prepExports.js",
     "registry.js"
   ],
   "keywords": [
