@@ -1,6 +1,6 @@
 {
   "name": "isopropyl-style-loader",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A fork of isomorphic-style-loader, but with the critical path CSS functionality removed.",
   "main": "index.js",
   "types": [
@@ -16,7 +16,16 @@
     "clean": "rimraf ./bin/*"
   },
   "files": [
-    "bin"
+    "./constants.d.ts",
+    "./dom.d.ts",
+    "./index.d.ts",
+    "./inline.d.ts",
+    "./registry.d.ts",
+    "./constants.js",
+    "./dom.js",
+    "./index.js",
+    "./inline.js",
+    "./registry.js"
   ],
   "keywords": [
     "webpack",
