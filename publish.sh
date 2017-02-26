@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-rm -fr ./dist
+
 npm build
+rm -fr ./dist
 mkdir ./dist
 cp ./bin/* ./dist
 cp ./package.json ./dist
