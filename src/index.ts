@@ -20,7 +20,7 @@ module.exports.pitch = function(this: webpack.loader.LoaderContext, remainingReq
             exports: module.exports,
             inline: ${!!cfgOptions.inline},
             moduleID, module.id,
-            remainingRequest: ${remainingRequestRequirePath}
+            remainingRequest: '${remainingRequestRequirePath}'
         };
 
         if (module.hot && typeof window !== 'undefined' && !!window.document) {
