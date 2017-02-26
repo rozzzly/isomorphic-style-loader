@@ -13,36 +13,23 @@ module.exports.pitch = function(this: webpack.loader.LoaderContext, remainingReq
     if (this.cacheable) this.cacheable();
 
     const remainingRequestRequirePath: string = stringifyRequest(this, `!!${remainingRequest}`);
-    const registryRequirePath: string = stringifyRequest(this, `!${path.join(__dirname, './registry')}`);
+    const prepExportsRequirePath: string = stringifyRequest(this, `!${path.join(__dirname, './prepExports')}`);
     return `
-        var content = undefined;
-        var register = require(${registryRequirePath}).register;
-
-        function load() {
-            content = require(${remainingRequestRequirePath});
-
-            if (typeof content === 'string') {
-                content = [[module.id, content, '']];
-            }
-
-            var css = '';
-            for(var i = 0; i < content.length; i++)
-                css += content[i][1];
-
-            module.exports = content.locals || {};
-            module.exports.${ImportID} = {
-                moduleID: content[0][0],
-                css: ${cfgOptions.inline ? 'css' : 'false'}
-            }
-
-            register(content[0][0], css);
-        }
+        var prepExports = require(${prepExportsRequirePath}).default;
+        var args = {
+            exports: module.exports,
+            inline: ${!!cfgOptions.inline},
+            moduleID, module.id,
+            remainingRequest: ${remainingRequestRequirePath}
+        };
 
         if (module.hot && typeof window !== 'undefined' && !!window.document) {
-            module.hot.accept(${remainingRequestRequirePath}, load)
+            module.hot.accept(${remainingRequestRequirePath}, function() {
+                prepExports(args);
+            });
         }
 
-        load();
+        prepExports(args);
     `;
 };
 
