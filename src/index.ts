@@ -25,13 +25,17 @@ module.exports.pitch = function(this: webpack.loader.LoaderContext, remainingReq
                 content = [[module.id, content, '']];
             }
 
+            var css = '';
+            for(var i = 0; i < content.length; i++)
+                css += content[i][1];
+
             module.exports = content.locals || {};
             module.exports.${ImportID} = {
                 moduleID: content[0][0],
-                css: ${cfgOptions.inline ? 'content[0][1]' : 'false'}
+                css: ${cfgOptions.inline ? 'css' : 'false'}
             }
 
-            register(content[0][0], content[0][1]);
+            register(content[0][0], css);
         }
 
         if (module.hot && typeof window !== 'undefined' && !!window.document) {

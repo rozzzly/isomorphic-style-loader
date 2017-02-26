@@ -6,7 +6,6 @@ const isBrowser: boolean = typeof window !== 'undefined' && !!window.document;
 
 (global as any)[ImportID] = (global as any)[ImportID] || { registry };
 
-
 export function register(moduleID: number | string, css: string): void {
     if (!(global as any)[ImportID].registry.has(moduleID) || (global as any)[ImportID].registry.get(moduleID) !== css) {
         (global as any)[ImportID].registry.set(moduleID, css);
