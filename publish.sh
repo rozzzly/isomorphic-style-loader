@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-npm build
+npm run build
 rm -fr ./dist
 mkdir ./dist
 cp ./bin/* ./dist
