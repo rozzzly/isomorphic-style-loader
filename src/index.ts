@@ -19,7 +19,7 @@ module.exports.pitch = function(this: webpack.loader.LoaderContext, remainingReq
         var args = {
             exports: module.exports,
             inline: ${!!cfgOptions.inline},
-            moduleID, module.id,
+            moduleID: module.id,
             remainingRequest: '${remainingRequestRequirePath}'
         };
 
