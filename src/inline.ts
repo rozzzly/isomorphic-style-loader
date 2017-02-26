@@ -7,6 +7,5 @@ export default function generateStyleSheet(): string {
     registry.forEach((css, moduleID): void => {
         result = result + generateStartTag(moduleID) + css + generateEndTag(moduleID);
     });
-    console.log(result, registry, registry.size);
     return result;
 }

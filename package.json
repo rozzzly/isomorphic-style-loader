@@ -1,6 +1,6 @@
 {
   "name": "isopropyl-style-loader",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A fork of isomorphic-style-loader, but with the critical path CSS functionality removed.",
   "main": "index.js",
   "types": [

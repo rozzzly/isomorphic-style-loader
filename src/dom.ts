@@ -19,7 +19,6 @@ export default function updateStyles(moduleID: number | string, css: string): vo
             // just append
             $style.innerHTML = oldText + newText;
         }
-
     } else {
         console.error(`Could not find style tag with the id '#${InlineID}'`);
     }
