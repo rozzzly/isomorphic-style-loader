@@ -1,65 +1,48 @@
 {
-  "name": "react-wrap-with-context",
-  "version": "1.2.1",
-  "description": "Pass context into React components and replace for React.withContext",
-  "main": "bin/WithContext.js",
-  "types": "WithContext.d.ts",
+  "name": "isopropyl-style-loader",
+  "version": "0.1.0",
+  "description": "A fork of isomorphic-style-loader, but with the critical path CSS functionality removed.",
+  "main": "bin/index.js",
+  "types": [
+    "./bin/constants.d.ts",
+    "./bin/dom.d.ts",
+    "./bin/index.d.ts",
+    "./bin/inline.d.ts",
+    "./bin/registry.d.ts"
+  ],
   "scripts": {
-    "test": "jest",
-    "build": "babel src -d bin",
+    "test": "echo 'No tests written. Contact @rozzzly if you want some.';",
+    "build": "tsc",
+    "clean": "rimraf ./bin/*",
     "prepublish": "npm build && npm test"
   },
   "files": [
-    "WithContext.d.ts",
-    "bin/WithContext.js"
+    "bin"
   ],
   "keywords": [
-    "unit-testing",
-    "react",
-    "react-context",
-    "jest",
-    "karma"
-  ],
-  "contributors": [
-    {
-      "name": "rozzzly",
-      "url": "https://github.com/rozzzly",
-      "email": "pclienau@gmail.com"
-    }
+    "webpack",
+    "hot-reload",
+    "css"
   ],
   "dependencies": {
-    "@types/react": "^15.0.11",
-    "react": "^15.4.2"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.23.0",
-    "babel-jest": "^18.0.0",
-    "babel-preset-es2015": "^6.22.0",
-    "babel-preset-react": "^6.23.0",
-    "jest-cli": "^18.1.0",
-    "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.4.2"
-  },
-  "jest": {
-    "transform": {
-      ".(js|jsx)": "<rootDir>/node_modules/babel-jest"
-    },
-    "moduleFileExtensions": [
-      "js",
-      "jsx"
-    ]
+    "@types/node": "^7.0.5",
+    "@types/webpack": "^2.2.7",
+    "loader-utils": "^1.0.2",
+    "rimraf": "^2.6.1",
+    "typescript": "^2.2.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattzeunert/react-wrap-with-context.git"
+    "url": "git+https://github.com/rozzzly/isopropyl-style-loader.git"
   },
   "author": {
-    "name": "mattzeunert",
-    "url": "https://github.com/mattzeunert"
+    "name": "rozzzly",
+    "email": "pclienau@gmail.com",
+    "url": "https://github.com/rozzzly"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mattzeunert/react-with-context/issues"
+    "url": "https://github.comm/rozzzly/isopropyl-style-loader/issues"
   },
-  "homepage": "https://github.com/mattzeunert/react-with-context#readme"
+  "homepage": "https://github.com/rozzzly/isopropyl-style-loader#readme"
 }

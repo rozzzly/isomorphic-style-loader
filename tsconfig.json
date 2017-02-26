@@ -1,0 +1,52 @@
+{
+    /////////////////////////////////////////////////////////////////////////////////
+    ///                                                                           ///
+    ///   Because, yes, I (totally) did (not) have to explicitly set every prop   ///
+    ///                                                                           ///
+    /////////////////////////////////////////////////////////////////////////////////
+    "compilerOptions": {
+        // module resolution
+        "target": "es5",
+        "module": "commonjs",
+        "lib": [
+            "dom",
+            "es2017"
+        ],
+        "moduleResolution": "node",
+        // `.d.ts` and `.map` generation
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "declaration": true,
+        "preserveConstEnums": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        // type checker configurations
+        "skipLibCheck": true,
+        "noUnusedLocals": false,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "allowUnreachableCode": false,
+        "noImplicitUseStrict": true,
+        "noFallthroughCasesInSwitch": true,
+        "suppressExcessPropertyErrors": false,
+        "allowSyntheticDefaultImports": false,
+        // cosmetic
+        "pretty": true,
+        "newLine": "LF",
+        "locale": "en-us",
+        "charset": "utf-8",
+        "removeComments": false, // otherwise, why'd you type them in the first place?!
+        "forceConsistentCasingInFileNames": false, // hell no, I'm a big boy.
+        "rootDir": "./src",
+        "outDir": "./bin"
+    },
+    "exclude": [
+        "./assets",
+        "./bin",
+        "./node_modules"
+    ],
+    "typeAcquisition": {
+        "enable": true
+    }
+}
