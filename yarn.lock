@@ -2,9 +2,13 @@
 # yarn lockfile v1
 
 
-"@types/node@*", "@types/node@^7.0.5":
+"@types/node@*":
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.5.tgz#96a0f0a618b7b606f1ec547403c00650210bfbb7"
+
+"@types/node@^7.0.8":
+  version "7.0.8"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.8.tgz#25e4dd804b630c916ae671233e6d71f6ce18124a"
 
 "@types/source-map@*":
   version "0.5.0"
@@ -20,9 +24,9 @@
   dependencies:
     "@types/source-map" "*"
 
-"@types/webpack@^2.2.7":
-  version "2.2.7"
-  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-2.2.7.tgz#bf2e13f709e6bf0cbbbb8d7e7087e11d75624171"
+"@types/webpack@^2.2.12":
+  version "2.2.12"
+  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-2.2.12.tgz#5e2ab82b5b43cfadcb308d3210c082cf67fd9893"
   dependencies:
     "@types/node" "*"
     "@types/tapable" "*"
@@ -81,9 +85,9 @@ json5@^0.5.0:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/json5/-/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
 
-loader-utils@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.0.2.tgz#a9f923c865a974623391a8602d031137fad74830"
+loader-utils@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.1.0.tgz#c98aef488bcceda2ffb5e2de646d6a754429f5cd"
   dependencies:
     big.js "^3.1.3"
     emojis-list "^2.0.0"
